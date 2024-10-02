@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новостной блог с прогнозом погоды</title>
@@ -49,6 +50,11 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
+
+    <!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+    
 </head>
 <body>
     <header>
@@ -66,14 +72,50 @@
             <p>Сегодня: Солнечно, 25°C</p>
             <p>Завтра: Облачно, 22°C</p>
         </div>
+
+<!-- Yandex.RTB R-A-12205779-1 -->
+<div id="yandex_rtb_R-A-12205779-1"></div>
+<script>
+window.yaContextCb.push(() => {
+    Ya.Context.AdvManager.render({
+        "blockId": "R-A-12205779-1",
+        "renderTo": "yandex_rtb_R-A-12205779-1"
+    })
+})
+</script>
+        
         <div class="news-article">
             <h2>Заголовок новости</h2>
             <p>Текст новости...</p>
         </div>
+
+<!-- Yandex.RTB R-A-12205779-2 -->
+<script>
+window.yaContextCb.push(() => {
+    Ya.Context.AdvManager.render({
+        "blockId": "R-A-12205779-2",
+        "type": "fullscreen",
+        "platform": "desktop"
+    })
+})
+</script>
+        
         <div class="news-article">
             <h2>Заголовок новости</h2>
             <p>Текст новости...</p>
         </div>
     </div>
+
+<!-- Yandex.RTB R-A-12205779-3 -->
+<script>
+window.yaContextCb.push(() => {
+    Ya.Context.AdvManager.render({
+        "blockId": "R-A-12205779-3",
+        "type": "floorAd",
+        "platform": "desktop"
+    })
+})
+</script>
+    
 </body>
 </html>
