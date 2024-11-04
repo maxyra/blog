@@ -1,129 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLLD3ZN6M4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CLLD3ZN6M4');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новостной блог с прогнозом погоды</title>
+    <title>10-Page Site</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
             text-align: center;
         }
-        nav {
+        .links {
+            margin: 20px 0;
+        }
+        .pagination {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            gap: 10px;
+            margin-top: 20px;
         }
-        nav a {
+        .pagination button {
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #333;
+            background-color: #eee;
+        }
+        .pagination button.active {
+            background-color: #333;
             color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
         }
-        nav a:hover {
-            background-color: #555;
+        .page {
+            display: none;
         }
-        .container {
-            padding: 20px;
-        }
-        .weather-widget {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .news-article {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .page.active {
+            display: block;
         }
     </style>
-
-    <!-- Yandex.RTB -->
-<script>window.yaContextCb=window.yaContextCb||[]</script>
-<script src="https://yandex.ru/ads/system/context.js" async></script>
-    
 </head>
 <body>
-    <header>
-        <h1>Новостной блог</h1>
-    </header>
-    <nav>
-        <a href="#">Главная</a>
-        <a href="#">Новости</a>
-        <a href="#">Погода</a>
-        <a href="#">Контакты</a>
-    </nav>
-    <div class="container">
-        <div class="weather-widget">
-            <h2>Прогноз погоды</h2>
-            <p>Сегодня: Солнечно, 25°C</p>
-            <p>Завтра: Облачно, 22°C</p>
+
+    <h1>10-Page Site with Links</h1>
+    
+    <!-- Pages with links -->
+    <div id="pages">
+        <!-- Page 1 -->
+        <div class="page active">
+            <div class="links">
+                <a href="https://google.com" target="_blank">Google 1</a><br>
+                <a href="https://google.com" target="_blank">Google 2</a><br>
+                <a href="https://google.com" target="_blank">Google 3</a><br>
+                <a href="https://google.com" target="_blank">Google 4</a><br>
+                <a href="https://google.com" target="_blank">Google 5</a><br>
+                <a href="https://google.com" target="_blank">Google 6</a><br>
+                <a href="https://google.com" target="_blank">Google 7</a><br>
+                <a href="https://google.com" target="_blank">Google 8</a><br>
+                <a href="https://google.com" target="_blank">Google 9</a><br>
+                <a href="https://google.com" target="_blank">Google 10</a><br>
+            </div>
         </div>
 
-<!-- Yandex.RTB R-A-12205779-1 -->
-<div id="yandex_rtb_R-A-12205779-1"></div>
-<script>
-window.yaContextCb.push(() => {
-    Ya.Context.AdvManager.render({
-        "blockId": "R-A-12205779-1",
-        "renderTo": "yandex_rtb_R-A-12205779-1"
-    })
-})
-</script>
-        
-        <div class="news-article">
-            <h2>Заголовок новости</h2>
-            <p>Текст новости...</p>
+        <!-- Create 9 more similar pages, with the same structure -->
+        <!-- Page 2 -->
+        <div class="page">
+            <div class="links">
+                <a href="https://google.com" target="_blank">Google 1</a><br>
+                <a href="https://google.com" target="_blank">Google 2</a><br>
+                <a href="https://google.com" target="_blank">Google 3</a><br>
+                <a href="https://google.com" target="_blank">Google 4</a><br>
+                <a href="https://google.com" target="_blank">Google 5</a><br>
+                <a href="https://google.com" target="_blank">Google 6</a><br>
+                <a href="https://google.com" target="_blank">Google 7</a><br>
+                <a href="https://google.com" target="_blank">Google 8</a><br>
+                <a href="https://google.com" target="_blank">Google 9</a><br>
+                <a href="https://google.com" target="_blank">Google 10</a><br>
+            </div>
         </div>
+        <!-- Repeat similar blocks for pages 3 to 10 -->
 
-<!-- Yandex.RTB R-A-12205779-2 -->
-<script>
-window.yaContextCb.push(() => {
-    Ya.Context.AdvManager.render({
-        "blockId": "R-A-12205779-2",
-        "type": "fullscreen",
-        "platform": "desktop"
-    })
-})
-</script>
-        
-        <div class="news-article">
-            <h2>Заголовок новости</h2>
-            <p>Текст новости...</p>
-        </div>
+        <!-- Additional pages here (3-10), similar to above -->
+        <!-- Example: Page 3 to Page 10 -->
     </div>
 
-<!-- Yandex.RTB R-A-12205779-3 -->
-<script>
-window.yaContextCb.push(() => {
-    Ya.Context.AdvManager.render({
-        "blockId": "R-A-12205779-3",
-        "type": "floorAd",
-        "platform": "desktop"
-    })
-})
-</script>
-    
+    <!-- Pagination buttons -->
+    <div class="pagination">
+        <button class="active" onclick="showPage(1)">1</button>
+        <button onclick="showPage(2)">2</button>
+        <button onclick="showPage(3)">3</button>
+        <button onclick="showPage(4)">4</button>
+        <button onclick="showPage(5)">5</button>
+        <button onclick="showPage(6)">6</button>
+        <button onclick="showPage(7)">7</button>
+        <button onclick="showPage(8)">8</button>
+        <button onclick="showPage(9)">9</button>
+        <button onclick="showPage(10)">10</button>
+    </div>
+
+    <script>
+        function showPage(pageNumber) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Show selected page
+            pages[pageNumber - 1].classList.add('active');
+
+            // Update active button
+            const buttons = document.querySelectorAll('.pagination button');
+            buttons.forEach(button => button.classList.remove('active'));
+            buttons[pageNumber - 1].classList.add('active');
+        }
+    </script>
+
 </body>
 </html>
